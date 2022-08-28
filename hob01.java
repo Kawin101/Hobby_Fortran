@@ -1,5 +1,5 @@
 // Coin.java		Authors: Lewis/Loftus
-// Credit: ISBN 0-321-31275-9 (2005), Chapter 2: Object-Oriented Design (Page.38-39)
+// Credit: ISBN 0-321-31275-9 (2005)
 // Represent a coin with two sides that can be flipped
 // หมายถึงเหรียญที่มีสองด้านที่พลิกได้
 
