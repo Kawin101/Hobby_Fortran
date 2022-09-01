@@ -116,12 +116,18 @@ program fortrantut
     !end select
     
     !-- step 10 (23:00 in video) --
+<<<<<<< HEAD
     !integer :: n = 0, m = 1 !(use 10 - 10.2) 
     !integer ::secret_num = 7 !(use 10 - 10.2)
+=======
+    integer :: n = 0, m = 1 
+    integer ::secrect_num = 7
+>>>>>>> bb79750b9a4ab80c3478f220bf3777e7e3681ca1
 
     !do n = 1, 10, 2
     !    print "(i1)", n
     !end do
+<<<<<<< HEAD
     
     !-- step 10.1 --
     !do while (m < 20)
@@ -217,6 +223,7 @@ program fortrantut
     print "(i3)", product(a1)
     print "(i2)", sum(a1)
     !-- end step 11.0 (29:29 min in video) --
+
 
 
 
