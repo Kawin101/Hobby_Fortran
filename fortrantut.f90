@@ -75,7 +75,7 @@ program fortrantut
     !print "(a14, i1)", "FLOOR(2.71) = ", FLOOR(2.71)
     !print "(a15, f3.1)", "MAX(2.7, 3.4) = ", MAX(2.7, 3.4)
     !print "(a15, f3.1)", "MIN(2.7, 3.4) = ", MIN(2.7, 3.4)
-!
+
     !print "(a14, f3.1)", "SIN(1.5708) = ", SIN(1.5708)
     !print "(a14, f3.1)", "COS(1.5708) = ", COS(1.5708)
     !print "(a14, f3.1)", "TAN(1.5708) = ", TAN(1.5708)
@@ -116,18 +116,12 @@ program fortrantut
     !end select
     
     !-- step 10 (23:00 in video) --
-<<<<<<< HEAD
     !integer :: n = 0, m = 1 !(use 10 - 10.2) 
     !integer ::secret_num = 7 !(use 10 - 10.2)
-=======
-    integer :: n = 0, m = 1 
-    integer ::secrect_num = 7
->>>>>>> bb79750b9a4ab80c3478f220bf3777e7e3681ca1
 
     !do n = 1, 10, 2
     !    print "(i1)", n
     !end do
-<<<<<<< HEAD
     
     !-- step 10.1 --
     !do while (m < 20)
@@ -150,34 +144,30 @@ program fortrantut
     !print *, "You guessed it"
 
     !-- do step 11.0 --
-    integer, dimension(1:5) :: a1, a2, a3
-    real, dimension(1:50) :: aR1
-    integer, dimension(5,5) :: a4
-    integer :: n, m, x, y
-    integer, dimension(:), allocatable :: a5
-    integer :: num_vals = 0
-    integer, dimension(1:9) :: a6 = (/ 1,2,3,4,5,6,7,8,9 /)
-    integer, dimension(1:3, 1:3) :: a7
+    !integer, dimension(1:5) :: a1, a2, a3
+    !real, dimension(1:50) :: aR1
+    !integer, dimension(5,5) :: a4
+    !integer :: n, m, x, y
+    !integer, dimension(:), allocatable :: a5
+    !integer :: num_vals = 0
+    !integer, dimension(1:9) :: a6 = (/ 1,2,3,4,5,6,7,8,9 /)
+    !integer, dimension(1:3, 1:3) :: a7
 
-    a1(1) = 5
-    print "(i1)", a1(1)
+    !a1(1) = 5
+    !print "(i1)", a1(1)
 
-    do n = 1,5
-        a1(n) = n
-    end do
-    do n = 1,5
-        print "(i1)", a1(n)
-    end do
+    !do n = 1,5
+    !    a1(n) = n
+    !end do
+    !do n = 1,5
+    !    print "(i1)", a1(n)
+    !end do
 
-    !-- step 11.0.1 --
-    !print "(3i2)", a1(1:3)
-    !print "(2i2)", a1(1:3:2)
-
-    do n = 1,5
-        do m = 1,5
-            a4(n, m) = n
-        end do
-    end do
+    !do n = 1,5
+    !    do m = 1,5
+    !        a4(n, m) = n
+    !    end do
+    !end do
 
     !-- do step 11.0.2 --
     !do n = 1,5 
@@ -194,35 +184,39 @@ program fortrantut
     !print "(i2)", shape(a4)
     !-- end step 11.0.2 --
 
-    print *, "Size of array? "
-    read *, num_vals
-    allocate(a5(1:num_vals))
+    !print *, "Size of array? "
+    !read *, num_vals
+    !allocate(a5(1:num_vals))
 
-    do n = 1, num_vals
-        a5(n) = n
-    end do
+    !do n = 1, num_vals
+    !    a5(n) = n
+    !end do
     
-    !-- step 11.0.3 --
+    !-- do step 11.0.3 --
     !do n = 1, num_vals
     !    print "(i1)", a5(n)
     !end do
+    !-- end step 11.0.3 --
 
-    a2 = (/1,2,3,6,7/)
-    print "(5i1)", ( a2(m), m = 1,5)
-    a7 = reshape(a6, (/ 3, 3 /))
+    !a2 = (/1,2,3,6,7/)
+    !print "(5i1)", ( a2(m), m = 1,5)
+    !a7 = reshape(a6, (/ 3, 3 /))
     
-    print "(l1)", all(a1 == a2, 1)
+    !print "(l1)", all(a1 == a2, 1)
 
-    print "(l1)", any(a1 == a2, 1)
-
-    print "(l1)", count(a1 == a2, 1)
-
-    print "(i1)", maxval(a1)
-    print "(i1)", minval(a1)
-
-    print "(i3)", product(a1)
-    print "(i2)", sum(a1)
+    !print "(l1)", any(a1 == a2, 1)
+    
+    !print "(l1)", count(a1 == a2, 1)
+    
+    !print "(i1)", maxval(a1)
+    !print "(i1)", minval(a1)
+    
+    !print "(i3)", product(a1)
+    ! "(i2)", sum(a1)
     !-- end step 11.0 (29:29 min in video) --
+
+
+
 
 
 
