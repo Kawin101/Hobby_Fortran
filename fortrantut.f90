@@ -115,6 +115,25 @@ program fortrantut
     !    print *, "Stay home"
     !end select
     
+    !-- step 10 (23:00 in video) --
+    integer :: n = 0, m = 1 
+    integer ::secrect_num = 7
+
+    !do n = 1, 10, 2
+    !    print "(i1)", n
+    !end do
+
+    do while (m < 20)
+        if (mod(m,2) == 0) then
+        print ("i1"), m
+        m = m + 1
+        cycle
+    end if
+    m = m + 1
+    if (m >= 10) then
+        exit
+    end if
+    end
 
 
 
