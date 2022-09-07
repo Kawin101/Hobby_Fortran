@@ -246,6 +246,31 @@ program fortrantut
     !print *, len(str)
     !-- 38:46 in video --
 
+    !-- do step 14 --
+    !type Customer
+    !    character (len=40) :: name
+    !    integer :: age
+    !    real :: balance
+    !end type Customer
+    !
+    !type(Customer), dimension(5) :: customers
+    !integer :: n
+
+    !type(Customer) :: cust1
+    !cust1%name = "Kawin Kocu"
+    !cust1%age = 21
+    !cust1%balance = 320.45
+    !customers(1) = cust1
+    !customers(2)%name = "Tom lanney"
+    !customers(2)%age = 54
+    !customers(2)%balance = 229.78
+
+    !do n = 1,2
+    !    print *, customers(n)
+    !end do
+    !-- end step 14 (41:32 in video) --
+
+
 
 
 
