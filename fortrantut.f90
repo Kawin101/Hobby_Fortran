@@ -270,9 +270,40 @@ program fortrantut
     !end do
     !-- end step 14 (41:32 in video) --
 
+    !-- do step 15 --
+    integer :: ans, ans2
+    real :: r_ans
+
+    !print "(a8,i1)", "5 + 4 = ", get_sum(5,4)
+    !print "(a8,i1)", "5 + 4 = ", get_sum2(5,4)
+    print "(a8,i1)", "5 + 4 = ", get_sum3(5)
+
+    contains
+        integer function get_sum(n1, n2)
+            implicit none
+            integer :: n1, n2, sum
+            sum = n1 + n2
+        end function get_sum
+
+        function get_sum2(n1, n2) result(sum)
+            implicit none
+            integer, intent(in) :: n1, n2
+            integer :: sum
+            sum = n1 + n2
+        end function get_sum2
+
+        pure function get_sum3(n1, n2) result(sum)
+            implicit none
+            integer, intent(in) :: n1
+            integer, intent(in), optional :: n2
+            integer :: sum
+            if (present(n2) ) then
+                sum = n1 + n2
+            else
+                sum = n1 + 1
+            end if
+        end function get_sum3
 
 
-
-
-
-end program fortrantut
+    end program fortrantut
+    !-- end step 15 (Vedio in 46:01)
